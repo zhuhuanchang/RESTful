@@ -180,7 +180,7 @@ post | https://www.example.com/api/login
 
 ---
 
-<span id = "logout"></span>
+<span id = "logout">用户登出</span>
 #### 用户登出：
 method | url
 ---|---
