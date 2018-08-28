@@ -16,9 +16,9 @@
 ---|---
 token | 令牌/密钥，服务端用于识别用户身份信息
 pageSize | 一页个数
-currentPage | 当前页数
+curPage | 当前页数
 result | 返回结果是否成功
-errCode | 状态码
+statusCode | 状态码
 message | 提示信息
 data | 返回的数据
 
@@ -39,14 +39,14 @@ data | 返回的数据
 #### 查询列表：
 method | url
 ---|---
-get | https://www.example.com/api/table?pageSize=10&currentPage=1
+get | https://www.example.com/api/table?pageSize=10&curPage=1
 ###### 返回
 ```js
 {
       "result": true,
-      "currentPage": 1,
+      "curPage": 1,
       "pageSize": 10,
-      "errCode": 200,
+      "statusCode": 200,
       "data": [
         {
           "id": 1,
@@ -74,7 +74,7 @@ get | https://www.example.com/api/table?id=1
 成功
 {
       "result": true,
-      "errCode": 200,
+      "statusCode": 200,
       "data": {
           "id": 1,
           "name": "zhc",
@@ -85,7 +85,7 @@ get | https://www.example.com/api/table?id=1
 失败
 {
       "result": false,
-      "errCode": 404,
+      "statusCode": 404,
       "message":"请求数据不存在"
     }
 ```
@@ -108,7 +108,7 @@ post | https://www.example.com/api/table
 ```js
 {
     "result": true,
-    "errCode": 200,
+    "statusCode": 200,
     }
 ```
 
@@ -131,7 +131,7 @@ put | https://www.example.com/api/table
 ```js
 {
     "result": true,
-    "errCode": 200,
+    "statusCode": 200,
     }
 ```
 
@@ -146,7 +146,7 @@ delete | https://www.example.com/api/table?id=1
 ```js
 {
     "result": true,
-    "errCode": 200,
+    "statusCode": 200,
     }
 ```
 
@@ -168,7 +168,7 @@ post | https://www.example.com/api/login
 ```js
 {
     "result": true,
-    "errCode": 200,
+    "statusCode": 200,
     "data":{
         "name":"管理员",
         "photo":'http://www.example.com/images/photo.jpg',
@@ -189,7 +189,7 @@ post | https://www.example.com/api/logout
 ```js
 {
     "result": true,
-    "errCode": 200,
+    "statusCode": 200,
     }
 ```
 
