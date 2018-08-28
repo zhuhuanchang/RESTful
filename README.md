@@ -35,7 +35,7 @@ data | 返回的数据
 - 用户登录/注册/修改密码，密码统一用md5加密发送
 ---
 
-<span id = "gets"></span>
+<a id = "gets"></a>
 #### 查询列表：
 method | url
 ---|---
@@ -64,7 +64,7 @@ get | https://www.example.com/api/table?pageSize=10&currentPage=1
 
 ---
 
-<span id = "get"></span>
+<a id = "get"></a>
 #### 查询详情：
 method | url
 ---|---
@@ -92,7 +92,7 @@ get | https://www.example.com/api/table?id=1
 
 ---
 
-<span id = "add"></span>
+<a id = "add"></a>
 #### 新增数据：
 method | url
 ---|---
@@ -114,7 +114,7 @@ post | https://www.example.com/api/table
 
 ---
 
-<span id = "edit"></span>
+<a id = "edit"></a>
 #### 修改数据：
 method | url
 ---|---
@@ -137,7 +137,7 @@ put | https://www.example.com/api/table
 
 ---
 
-<span id = "delete"></span>
+<a id = "delete"></a>
 #### 删除数据：
 method | url
 ---|---
@@ -152,7 +152,7 @@ delete | https://www.example.com/api/table?id=1
 
 ---
 
-<span id = "login"></span>
+<a id = "login"></a>
 #### 用户登录：
 method | url
 ---|---
