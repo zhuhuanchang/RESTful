@@ -6,6 +6,7 @@
 - [删除数据](#delete)
 - [用户登录](#login)
 - [用户登出](#logout)
+- [获取导航菜单](#getMenuList)
 
 
 ---
@@ -201,6 +202,32 @@ data | 返回的数据
 {
     "result": true,
     "statusCode": 200,
+    }
+```
+
+---
+<a id = "getMenuList"></a>
+# 获取导航菜单
+> 获取导航菜单也是获取用户权限接口，决定用户能访问的菜单栏目
+
+**请求方式：** GET
+
+**请求地址**：```https://www.example.com/api/getMenuList?userId=1```
+
+**返回结果：**
+```js
+{
+    "result": true,
+    "statusCode": 200,
+    "data":[{
+        'icon':'i-icon-home',//菜单图标
+        'path':'/home',//菜单跳转地址或路由跳装地址
+        'title':'首页',//菜单名称
+        },{
+        'icon':'i-icon-menu',
+        'path':'/menu',
+        'title':'菜单栏目',
+    }]
     }
 ```
 
