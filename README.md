@@ -12,7 +12,7 @@
 ---
 
 
-# RESTful风格设计介绍
+# RESTful接口风格介绍
 参数 | 说明
 ---|---
 token | 令牌/密钥，服务端用于识别用户身份信息
@@ -146,7 +146,7 @@ data | 返回的数据
 ---
 
 <a id = "delete"></a>
-#### 删除数据：
+# 删除数据
 **请求方式：** DELETE
 
 **请求地址**：```https://www.example.com/api/table?id=1```
