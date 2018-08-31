@@ -51,11 +51,11 @@ data | 返回的数据
 ```js
 {
       "result": true,
+      "statusCode": 200,
+      "message":'',
       "curPage": 1,
       "pageSize": 10,
-      "statusCode": 200,
-      "data": [
-        {
+      "data": [{
           "id": 1,
           "name": "zhc",
           "age": 20
@@ -64,9 +64,8 @@ data | 返回的数据
           "id": 2,
           "name": "zhc2",
           "age": 21
-        }
-      ]
-    }
+     }]
+}
 ```
 
 ---
@@ -83,19 +82,24 @@ data | 返回的数据
 {
       "result": true,
       "statusCode": 200,
+      "message":'',
+      "curPage": '',
+      "pageSize": '',
       "data": {
           "id": 1,
           "name": "zhc",
           "age": 20
         }
-    }
+}
 
 失败
-{
-      "result": false,
+{     "result": false,
       "statusCode": 404,
-      "message":"请求数据不存在"
-    }
+      "message":'请求数据不存在',
+      "curPage": '',
+      "pageSize": '',
+      "data":{}
+}
 ```
 
 ---
@@ -111,14 +115,18 @@ data | 返回的数据
 {
     "name": "zhc",
     "age": 20,
-    }
+}
 ```
 **返回结果：**
 ```js
-{
-    "result": true,
-    "statusCode": 200,
-    }
+{   
+      "result": true,
+      "statusCode": 200,
+      "message":'',
+      "curPage": '',
+      "pageSize": '',
+      "data":{}
+}
 ```
 
 ---
@@ -135,14 +143,18 @@ data | 返回的数据
     "id":1,
     "name": "zhc",
     "age": 20,
-    }
+}
 ```
 **返回结果：**
 ```js
 {
-    "result": true,
-    "statusCode": 200,
-    }
+      "result": true,
+      "statusCode": 200,
+      "message":'',
+      "curPage": '',
+      "pageSize": '',
+      "data":{}
+}
 ```
 
 ---
@@ -156,9 +168,13 @@ data | 返回的数据
 **返回结果：**
 ```js
 {
-    "result": true,
-    "statusCode": 200,
-    }
+      "result": true,
+      "statusCode": 200,
+      "message":'',
+      "curPage": '',
+      "pageSize": '',
+      "data":{}
+}
 ```
 
 ---
@@ -174,13 +190,16 @@ data | 返回的数据
 {
     "userName":"admin",
     "password": "123456",//密码统一用md5加密发送
-    }
+}
 ```
 **返回结果：**
 ```js
 {
     "result": true,
     "statusCode": 200,
+    "message":'',
+    "curPage": '',
+    "pageSize": '',
     "data":{
         "name":"管理员",
         "photo":'http://www.example.com/images/photo.jpg',
@@ -204,7 +223,11 @@ data | 返回的数据
 {
     "result": true,
     "statusCode": 200,
-    }
+    "message":'',
+    "curPage": '',
+    "pageSize": '',
+    "data":{}
+}
 ```
 
 ---
@@ -221,6 +244,9 @@ data | 返回的数据
 {
     "result": true,
     "statusCode": 200,
+    "message":'',
+    "curPage": '',
+    "pageSize": '',
     "data":[{
         'icon':'i-icon-home',//菜单图标
         'path':'/home',//菜单跳转地址或路由跳装地址
@@ -230,7 +256,7 @@ data | 返回的数据
         'path':'/menu',
         'title':'菜单栏目',
     }]
-    }
+}
 ```
 
 ---
