@@ -18,11 +18,12 @@
 参数 | 说明
 ---|---
 token | 令牌/密钥，服务端用于识别用户身份信息
-pageSize | 一页个数
-curPage | 当前页数
 result | 返回结果是否成功
 statusCode | 状态码
 message | 提示信息
+total | 数据总数
+curPage | 当前页数
+pageSize | 一页个数
 data | 返回的数据
 
 
@@ -53,6 +54,7 @@ data | 返回的数据
       "result": true,
       "statusCode": 200,
       "message":'',
+      "total":2,
       "curPage": 1,
       "pageSize": 10,
       "data": [{
@@ -83,6 +85,7 @@ data | 返回的数据
       "result": true,
       "statusCode": 200,
       "message":'',
+      "total":'',
       "curPage": '',
       "pageSize": '',
       "data": {
@@ -96,6 +99,7 @@ data | 返回的数据
 {     "result": false,
       "statusCode": 404,
       "message":'请求数据不存在',
+      "total":'',
       "curPage": '',
       "pageSize": '',
       "data":{}
@@ -123,6 +127,7 @@ data | 返回的数据
       "result": true,
       "statusCode": 200,
       "message":'',
+      "total":'',
       "curPage": '',
       "pageSize": '',
       "data":{}
@@ -151,6 +156,7 @@ data | 返回的数据
       "result": true,
       "statusCode": 200,
       "message":'',
+      "total":'',
       "curPage": '',
       "pageSize": '',
       "data":{}
@@ -171,6 +177,7 @@ data | 返回的数据
       "result": true,
       "statusCode": 200,
       "message":'',
+      "total":'',
       "curPage": '',
       "pageSize": '',
       "data":{}
@@ -198,6 +205,7 @@ data | 返回的数据
     "result": true,
     "statusCode": 200,
     "message":'',
+    "total":'',
     "curPage": '',
     "pageSize": '',
     "data":{
@@ -224,6 +232,7 @@ data | 返回的数据
     "result": true,
     "statusCode": 200,
     "message":'',
+    "total":'',
     "curPage": '',
     "pageSize": '',
     "data":{}
@@ -245,6 +254,7 @@ data | 返回的数据
     "result": true,
     "statusCode": 200,
     "message":'',
+    "total":'',
     "curPage": '',
     "pageSize": '',
     "data":[{
