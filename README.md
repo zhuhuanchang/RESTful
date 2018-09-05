@@ -1,6 +1,6 @@
 
 # 目录
-> 更新时间: 2018-08-30
+> 更新时间: 2018-09-05
 - [查询列表](#gets)
 - [查询详情](#get)
 - [修改数据](#edit)
@@ -19,7 +19,6 @@
 ---|---
 token | 令牌/密钥，服务端用于识别用户身份信息
 result | 返回结果是否成功
-statusCode | 状态码
 message | 提示信息
 total | 数据总数
 curPage | 当前页数
@@ -27,7 +26,7 @@ pageSize | 一页个数
 data | 返回的数据
 
 
-状态码 | 说明
+http状态码 | 说明
 ---|---
 200 | 服务器成功返回用户请求的数据
 400 | 用户发出的请求有错误，服务器没有进行新建或修改数据的操作
@@ -35,6 +34,7 @@ data | 返回的数据
 404 | 用户发出的请求针对的是不存在的记录，服务器没有进行操作
 
 ### 注意事项
+- 根据http状态码来做错误捕捉和查询失败/登录超时等交互。
 - 接口url分析：```https://www.example.com/api/table ```  服务器域名/api/数据表名
 - token在用户登录接口成功后返回存在客户端（浏览器）缓存中，后续请求接口都要把token放在请求头（Headers）里发送给服务端
 - 用户登录/注册/修改密码，密码统一用md5加密发送
@@ -52,7 +52,6 @@ data | 返回的数据
 ```js
 {
       "result": true,
-      "statusCode": 200,
       "message":'',
       "total":2,
       "curPage": 1,
@@ -83,7 +82,6 @@ data | 返回的数据
 成功
 {
       "result": true,
-      "statusCode": 200,
       "message":'',
       "total":'',
       "curPage": '',
@@ -97,7 +95,6 @@ data | 返回的数据
 
 失败
 {     "result": false,
-      "statusCode": 404,
       "message":'请求数据不存在',
       "total":'',
       "curPage": '',
@@ -125,7 +122,6 @@ data | 返回的数据
 ```js
 {   
       "result": true,
-      "statusCode": 200,
       "message":'',
       "total":'',
       "curPage": '',
@@ -154,7 +150,6 @@ data | 返回的数据
 ```js
 {
       "result": true,
-      "statusCode": 200,
       "message":'',
       "total":'',
       "curPage": '',
@@ -175,7 +170,6 @@ data | 返回的数据
 ```js
 {
       "result": true,
-      "statusCode": 200,
       "message":'',
       "total":'',
       "curPage": '',
@@ -203,7 +197,6 @@ data | 返回的数据
 ```js
 {
     "result": true,
-    "statusCode": 200,
     "message":'',
     "total":'',
     "curPage": '',
@@ -230,7 +223,6 @@ data | 返回的数据
 ```js
 {
     "result": true,
-    "statusCode": 200,
     "message":'',
     "total":'',
     "curPage": '',
@@ -252,7 +244,6 @@ data | 返回的数据
 ```js
 {
     "result": true,
-    "statusCode": 200,
     "message":'',
     "total":'',
     "curPage": '',
