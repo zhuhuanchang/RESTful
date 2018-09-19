@@ -76,7 +76,7 @@ http状态码 | 说明
 # 查询详情
 **请求方式：** GET
 
-**请求地址**：```https://www.example.com/api/table?id=1```
+**请求地址**：```https://www.example.com/api/table/1```
 
 **返回结果：**
 ```js
